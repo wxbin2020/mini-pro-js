@@ -7,8 +7,8 @@ import router from './router'
 Vue.config.productionTip = false
 
 // 引入vue-amap
-import VueAMap from 'vue-amap';
-Vue.use(VueAMap);
+import VueAMap from 'vue-amap'
+Vue.use(VueAMap)
 // 初始化vue-amap
 VueAMap.initAMapApiLoader({
   // 高德的key
@@ -18,6 +18,7 @@ VueAMap.initAMapApiLoader({
   // 高德 sdk 版本，默认为 1.4.4
   v: '1.4.4'
 })
+
 
 new Vue({
   router,
