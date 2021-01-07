@@ -9,7 +9,7 @@ export default {
   },
   data () {
     return {
-      msg: 'eeeeeeeeeeeeeeeeeeeee'
+      msg: '在么,我歘了啊大s'
     }
   },
   created () {
