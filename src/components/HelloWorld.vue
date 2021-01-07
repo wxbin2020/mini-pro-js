@@ -6,11 +6,10 @@
 export default {
   name: 'HelloWorld',
   props: {
-    msg: Array
   },
   data () {
     return {
-
+      msg: 'eeeeeeeeeeeeeeeeeeeee'
     }
   },
   created () {
