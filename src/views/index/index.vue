@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <div>
-      <swiper class="swiper" :options="swiperOption">
+      <swiper class="swiper">
         <swiper-slide class="slide-1"></swiper-slide>
         <swiper-slide class="slide-2"></swiper-slide>
         <swiper-slide class="slide-3"></swiper-slide>
@@ -12,7 +12,7 @@
         <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
       </swiper>
     </div>
-    <el-amap vid="amapContainer" :center="center" :amap-manager="amapManager" :zoom="zoom" :events="events" class="amap-demo">
+    <el-amap vid="amapContainer" :center="center" :zoom="zoom" :events="events" class="amap-demo">
     </el-amap>
   </div>
 </template>
@@ -40,14 +40,14 @@ export default {
     }
   },
   mounted () {
-    window.VueAMap.lazyAMapApiLoaderInstance.load().then(() => {
-      // eslint-disable-next-line no-undef
-      this.map = new AMap.Map('amapContainer', {
-        // eslint-disable-next-line no-undef
-        center: new AMap.LngLat(121.59996, 31.197646),
-        zoom: this.zoom
-      })
-    })
+    // window.VueAMap.lazyAMapApiLoaderInstance.load().then(() => {
+    //   // eslint-disable-next-line no-undef
+    //   this.map = new AMap.Map('amapContainer', {
+    //     // eslint-disable-next-line no-undef
+    //     center: new AMap.LngLat(121.59996, 31.197646),
+    //     zoom: this.zoom
+    //   })
+    // })
   }
 }
 </script>
